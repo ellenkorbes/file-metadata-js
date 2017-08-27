@@ -1,27 +1,27 @@
-Welcome to the Glitch BETA
-=========================
+# File Metadata Microservice
 
-Click `Show` in the header to see your app live. Updates to your code will instantly deploy and update live.
+For [freeCodeCamp](http://freecodecamp.com) - [Back end → API Projects → File Metadata Microservice](https://www.freecodecamp.org/challenges/file-metadata-microservice)
 
-**Glitch** is the friendly commmunity where you'll build the app of your dreams. Glitch lets you instantly create, remix, edit, and host an app, bot or site, and you can invite collaborators or helpers to simultaneously edit code with you.
+## User Stories
 
-Find out more [about Glitch](https://glitch.com/about).
+1. I can submit a FormData object that includes a file upload.
 
+2. When I submit something, I will receive the file size in bytes within the JSON response
 
-Your Project
-------------
+## Usage
 
-On the front-end,
-- edit `public/client.js`, `public/style.css` and `views/index.html`
-- drag in `assets`, like images or music, to add them to your project
+```
+POST multipart/form-data → https://file-metadata-js.glitch.me/upload
+```
 
-On the back-end,
-- your app starts at `server.js`
-- add frameworks and packages in `package.json`
-- safely store app secrets in `.env` (nobody can see this but you and people you invite)
+```
+Manual upload at https://file-metadata-js.glitch.me/
+```
 
+## Output
 
-Made by [Fog Creek](https://fogcreek.com/)
--------------------
-
-\ ゜o゜)ノ
+```
+{  
+   "size": 154774
+}
+```

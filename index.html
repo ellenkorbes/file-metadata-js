@@ -1,5 +1,54 @@
-<form id="upload" enctype="multipart/form-data" method="post" action="/upload">
-  <label for="file">Please select a file:</label>
-   <input id="file" name="file" type="file" />
-   <input type="submit" value="submit" id="submit" />
-</form>
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>URL Shortener Microservice</title>
+  <style></style>
+</head>
+
+<body>
+
+  <h1 id="filemetadatamicroservice">File Metadata Microservice</h1>
+
+  <p>For <a href="http://freecodecamp.com">freeCodeCamp</a> - <a href="https://www.freecodecamp.org/challenges/file-metadata-microservice">Back end → API Projects → File Metadata Microservice</a></p>
+
+  <h2 id="userstories">User Stories</h2>
+
+  <ol>
+    <li>
+      <p>I can submit a FormData object that includes a file upload.</p>
+    </li>
+
+    <li>
+      <p>When I submit something, I will receive the file size in bytes within the JSON response</p>
+    </li>
+  </ol>
+
+  <h2 id="usage">Usage</h2>
+
+  <pre><code>POST multipart/form-data → https://file-metadata-js.glitch.me/upload
+  </code></pre>
+
+  <pre><code>Manual upload at https://file-metadata-js.glitch.me/
+  </code></pre>
+
+  <h2 id="output">Output</h2>
+
+  <pre><code>  {  
+     "size": 154774
+  }
+  </code></pre>
+
+  <hr>
+
+  <form id="upload" enctype="multipart/form-data" method="post" action="/upload">
+    <label for="file">Please select a file:</label>
+    <input id="file" name="file" type="file" />
+    <input type="submit" value="Submit" id="submit" />
+  </form>
+
+</body>
+
+</html>
