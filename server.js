@@ -8,7 +8,9 @@ app.get("/", function (request, response) {
 
 var upload = multer({ dest:'uploads/' })
 app.post('/upload', upload.single('file'), function (request, response, next) {
-  return response.json(request.file)
+  return response.json({
+    size: request.file.size
+  })
 })
 
 // listen for requests :)
